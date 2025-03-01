@@ -2,7 +2,8 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum= 1;
+const X = 1
+let sum = X;
     while (sum <= 20) {
         sum++
         console.log(sum + "0")
