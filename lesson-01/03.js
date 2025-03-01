@@ -5,4 +5,13 @@
 */
 
 // your code
-let sum =
+// let sum
+//
+let x = 20
+let sum=0;
+    while (x>0) {
+       if(x % 2 ===1){
+           sum+=x
+       }
+        x--;
+    }
