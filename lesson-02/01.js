@@ -17,8 +17,7 @@ const hasSpecialPermission = false
 const hasTemporaryPass = true
 
 let isAccess =
-    (isAdmin || !hasSpecialPermission) && (isVerifiedUser || hasTemporaryPass) &&
-    (!isVerifiedUser || !hasTemporaryPass) && (!isVerifiedUser || hasSpecialPermission || !hasTemporaryPass)
+    (isAdmin || !hasSpecialPermission) && (isVerifiedUser || hasTemporaryPass) && (!isVerifiedUser || !hasTemporaryPass)
 
 console.log(isAccess)
 
