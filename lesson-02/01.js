@@ -11,10 +11,10 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = true
+const isAdmin = false
 const isVerifiedUser = false
 const hasSpecialPermission = false
-const hasTemporaryPass = true
+const hasTemporaryPass = false
 
 let isAccess = (isAdmin || hasSpecialPermission) && (isVerifiedUser || hasTemporaryPass)
 
