@@ -5,23 +5,21 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 100 // тестовое значение, можно изменять
+const score = 60 // тестовое значение, можно изменять
 let grade
-
-    while (grade)
         if (score <= 100) {
             if (score >= 90) {
-                alert("A")
+                grade = "A"
             } else if (score >= 80) {
-                alert("B");
+                grade = "B";
             } else if (score >= 70) {
-                alert("C");
+                grade = "C";
             } else if (score >= 50) {
-                alert("D");
+                grade = "D";
             } else {
-                alert("F");
+                grade = "F";
             }
         }
-grade = score
+
 
 // your code

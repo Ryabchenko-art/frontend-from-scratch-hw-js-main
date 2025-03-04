@@ -8,28 +8,24 @@
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
 
-let dice1 = (Math.floor(Math.random() * 7) + 1);// your code
-let dice2 = (Math.floor(Math.random() * 7) + 1);// your code
-let isWinningDouble = true;
-while (isWinningDouble){
-    if ((dice1 >= 3) === (dice2 >=3)) {
-            alert('Первый бросок: ' + dice1)
-            alert('Второй бросок: ' + dice2)
-            if (isWinningDouble) {
-                alert('Выигрышный дубль!')
-            } else {
-                alert('Не выигрышный дубль.')
-            }
-        }
-    }
+let dice1 = Math.floor(Math.random() * 7);// your code
+let dice2 = Math.floor(Math.random() * 7);// your code
+let isWinningDouble = (dice1 === dice2 && (dice1 > 3 && dice2 > 3));
 
-/*
+if (isWinningDouble) {
+    console.log('Выигрышный дубль!')
+} else {
+    console.log('Не выигрышный дубль.')
+}
+
 console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)
-if (isWinningDouble) {
-  console.log('Выигрышный дубль!')
-} else {
-  console.log('Не выигрышный дубль.')
-}
-(dice1 === 4 && dice2 === 4 || dice1 === 5 && dice2 === 5 || dice1 === 6 && dice2 === 6)
-*/
+
+
+// if (isWinningDouble) {
+//   console.log('Выигрышный дубль!')
+// } else {
+//   console.log('Не выигрышный дубль.')
+// }
+// (dice1 === 4 && dice2 === 4 || dice1 === 5 && dice2 === 5 || dice1 === 6 && dice2 === 6)
+// */
