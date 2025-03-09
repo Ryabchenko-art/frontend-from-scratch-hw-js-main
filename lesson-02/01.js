@@ -21,7 +21,5 @@ console.log(isAccess)
 
 
 // condition (isTrue)  ?  1 : 2
-// (isAdmin || hasSpecialPermission) && (isVerifiedUser && (hasSpecialPermission || !hasTemporaryPass))||
-// (isAdmin || !hasSpecialPermission) && (!isVerifiedUser || hasTemporaryPass)
 // your code
 
