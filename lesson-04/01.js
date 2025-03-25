@@ -19,8 +19,7 @@ let array = [1, 2, 3, 4, 5]
 let element = 2
 function includesElement(array,  element) {
     for (let i = 0; i < array.length; i++) {
-        let elementArray = array[i]
-        if (elementArray === element) {
+        if (array[i] === element) {
             return true;
         }
     }
