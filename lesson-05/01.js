@@ -26,4 +26,4 @@ const game = {
         }
     }
   }
-game.addResource(0, 100)
+game.addResource()
