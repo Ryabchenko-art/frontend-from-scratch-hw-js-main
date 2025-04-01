@@ -20,9 +20,10 @@ const game = {
     addResource: function (resource, amount) {
         if (!game.resources.hasOwnProperty('gold' || 'lumber')) {
             console.log('Invalid resource')
+        } else {
+            console.log(`'gold', ${amount}`)
+            console.log(`'lumber', ${amount}`)
         }
-          console.log(`gold ${amount}`)
-          console.log(`lumber ${amount}`)
+    }
   }
-}
 game.addResource(0, 100)
