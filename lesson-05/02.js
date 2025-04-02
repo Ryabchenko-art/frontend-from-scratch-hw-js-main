@@ -35,4 +35,6 @@ const gallery = {
   'Starry Night': 'Vincent van Gogh',
   'The Scream': 'Edvard Munch',
 }
-function updateGallery() {}
+function updateGallery(gallery, artwork, newValue) {
+  gallery[artwork] = newValue;
+}

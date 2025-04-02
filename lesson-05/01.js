@@ -13,17 +13,15 @@
 этого ресурса в объекте.
 */
 const game = {
-  resources: {
-      gold: 250,
-      lumber: 100,
-  },
-    addResource: function (resource, amount) {
-        if (!game.resources.hasOwnProperty('gold' || 'lumber')) {
-            console.log('Invalid resource')
-        } else {
-            console.log(`'gold', ${amount}`)
-            console.log(`'lumber', ${amount}`)
+    resources: {
+        gold: 250,
+        lumber: 100,
+    },
+    addResource(resource, amount) {
+        if (!(resource in this.resources)) {
+            console.log("Invalid resource");
+            return;
         }
+        this.resources[resource] += amount;
     }
-  }
-game.addResource()
+}
