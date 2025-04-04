@@ -28,7 +28,7 @@ const img = document.getElementById("web-tech-image");
 let ind = 0;
 
 function changeImg(i) {
-  let currentInd = Math.abs((i)  % WEB_TECH_IMAGES.length)
+  let currentInd = Math.abs((i + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length)
   console.log(i)
   img.src = WEB_TECH_IMAGES[currentInd]
 }
