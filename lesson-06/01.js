@@ -25,7 +25,7 @@ const WEB_TECH_IMAGES = [
 const btnPrev = document.getElementById("prev-button");
 const btnNext = document.getElementById("next-button");
 const img = document.getElementById("web-tech-image");
-let ind = 0;
+let ind = 1;
 
 function changeImg(i) {
   let currentInd = Math.abs((i + 1) % WEB_TECH_IMAGES.length)
