@@ -28,8 +28,7 @@ const img = document.getElementById("web-tech-image");
 let ind = 0;
 
 function changeImg(i) {
-  let currentInd = Math.abs((i + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length)
-  console.log(i)
+  let currentInd = Math.abs((i + 1) % WEB_TECH_IMAGES.length)
   img.src = WEB_TECH_IMAGES[currentInd]
 }
 btnPrev.addEventListener(
@@ -37,7 +36,6 @@ btnPrev.addEventListener(
     function (param) {
       changeImg(ind--)
     })
-
 btnNext.addEventListener(
     'click',
     function (param) {
