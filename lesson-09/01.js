@@ -10,10 +10,11 @@
 - `element` (текущий элемент массива)
 - `index` (индекс текущего элемента)
 
-Функция `filter` должна возвращать новый массив, содержащий только те элементы `array`, для которых `callback` возвращает `true`.
+Функция `filter` должна возвращать новый массив, содержащий только те элементы `array`,
+ для которых `callback` возвращает `true`.
 */
 
-/* Пример использования:
+/*Пример использования:
 const numbers = [1, 2, 3, 4, 5]
 
 const oddNumbers = filter(numbers, (element, index) => {
@@ -23,4 +24,14 @@ const oddNumbers = filter(numbers, (element, index) => {
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
-const filter = () => {}
+function filter(array, callback) {
+    const result = []; // Инициализация нового массива для хранения отфильтрованных элементов
+
+    for (let i = 0; i < array.length; i++) { // Перебор каждого элемента массива
+        const element = array[i]; // Получаем текущий элемент
+        if (callback(element, i)) { // Вызываем коллбек с элементом и индексом
+            result.push(element); // Если коллбек возвращает true, добавляем элемент в результат
+        }
+    }
+    return result; // Возвращаем новый массив
+}
